@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Admission Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Admission Form</h2>
+    <input type="text" id="name" placeholder="Enter Student Name" required><br>
+    <input type="number" id="age" placeholder="Enter Age" required><br>
+    <input type="text" id="className" placeholder="Enter Class" required><br>
+    <button onclick="addStudent()">Add Student</button>
+    <button id="downloadBtn" onclick="downloadPDF()">Download List as PDF</button>
+
+    <div class="list">
+      <h3>Student List</h3>
+      <ul id="studentList"></ul>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
