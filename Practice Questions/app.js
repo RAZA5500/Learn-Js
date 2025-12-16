@@ -157,3 +157,56 @@
 // } else {
 //   alert("Fail")
 // }
+
+// 1. Current date print karo (YYYY-MM-DD format)
+
+// var currentDate = new Date();
+
+// var year = currentDate.getFullYear();
+// var month = String(currentDate.getMonth() + 1).padStart(2, "0");
+// var day = String(currentDate.getDate()).padStart(2, "0");
+
+// console.log(year + "-" + month + "-" + day);
+
+
+// // 2. Current time print karo (HH:MM:SS 24-hour format)
+
+// var hours = String(currentDate.getHours()).padStart(2, "0");
+// var minutes = String(currentDate.getMinutes()).padStart(2, "0");
+// var seconds = String(currentDate.getSeconds()).padStart(2, "0");
+
+// console.log(hours + ":" + minutes + ":" + seconds);
+
+
+// // 3. Aaj ka day name print karo (e.g., Monday)
+
+// var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// var today = new Date();
+
+// var dayName = days[today.getDay()];
+// console.log("Day Name:", dayName);
+
+
+// // 4. Month ka name print karo (e.g., December)
+
+// var months = [
+//   "January", "February", "March", "April", "May", "June",
+//   "July", "August", "September", "October", "November", "December"
+// ];
+
+// var monthName = months[today.getMonth()];
+// console.log("Month Name:", monthName);
+
+
+// // 5. Given string "2025-01-01" ko Date object me convert karo
+
+// var date = new Date("2025-01-01");
+
+// // Year print karo
+// console.log("Year:", date.getFullYear());
+
+// // Month print karo (0-based hota hai, isliye +1)
+// console.log("Month:", date.getMonth() + 1);
+
+// // Day print karo (date of month)
+// console.log("Day:", date.getDate());
